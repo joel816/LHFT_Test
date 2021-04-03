@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Configuration</h1>
+<div mat-dialog-content>
+  <mat-form-field class="input-field-width">
+    <mat-label>Update Frequency Milliseconds</mat-label>
+    <input matInput [(ngModel)]="config.update_frequency_milliseconds">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="input-field-width">
+    <mat-label>Elements Per Update</mat-label>
+    <input matInput [(ngModel)]="config.elements_per_update">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="update()">Update</button>
+  <button mat-button (click)="cancel()">Cancel</button>
+</div>
